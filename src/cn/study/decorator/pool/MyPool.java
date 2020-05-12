@@ -1,7 +1,7 @@
 package cn.study.decorator.pool;
 
 import ToolSutil.JDBCUtils;
-
+import cn.study.decorator.ConnectionDecorator;
 import javax.sql.DataSource;
 import java.io.PrintWriter;
 import java.sql.Connection;
@@ -26,12 +26,13 @@ public class MyPool implements DataSource {
         }
     }
 
-    //3.提供getconnection方法，对外提供获取连接数据库对象
+    //3.提供getconnection方法，对外提供获取连接数据库的对象
     @Override
     public Connection getConnection() throws SQLException {
         Connection conn = list.remove(0);//获取元素之后，会删除该元素
         System.out.println("减少了一个对象");
-        return conn;
+        //创建包装类对象
+        return new ConnectionDecorator(conn, this);
     }
 
     //4.还回数据库连接对象到列表

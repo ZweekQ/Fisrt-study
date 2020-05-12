@@ -17,8 +17,8 @@ import java.util.concurrent.Executor;
 public class ConnectionDecorator implements Connection {
 
     //2.将被包装类Connection传入构造方法中
-    private Connection conn;
-    private  MyPool myPool;
+    private final Connection conn;
+    private final MyPool myPool;
     public ConnectionDecorator(Connection conn, MyPool myPool){
         //this代表的是本来对象
         this.conn = conn;
