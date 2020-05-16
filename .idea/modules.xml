@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/webday01.iml" filepath="$PROJECT_DIR$/webday01.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/web2.iml" filepath="$PROJECT_DIR$/web2.iml" />
+>>>>>>> 234a4c84f01560236eb6cd7f785a3277ef472e4e
     </modules>
   </component>
 </project>
