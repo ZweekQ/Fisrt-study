@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="372dba81-86ef-4c04-a618-18fb5efd9b75" name="Default Changelist" comment="第一次提交" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1byI7mMWsukl9e6bcbAMJIe380f" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator.URUW44P6VPFSYTC\IdeaProjects\webday01\web" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="WebServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.core.WebServer" />
+      <module name="webday01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.core.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.WebServer" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="372dba81-86ef-4c04-a618-18fb5efd9b75" name="Default Changelist" comment="" />
+      <created>1589597741566</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589597741566</updated>
+      <workItem from="1589597744200" duration="13696000" />
+    </task>
+    <task id="LOCAL-00001" summary="第一次提交">
+      <created>1589598457385</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1589598457385</updated>
+    </task>
+    <task id="LOCAL-00002" summary="第一次提交">
+      <created>1589612744861</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1589612744861</updated>
+    </task>
+    <task id="LOCAL-00003" summary="第一次提交">
+      <created>1589613621336</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1589613621336</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="第一次提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="第一次提交" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="453" y="76" key="#Project_Structure" timestamp="1589613700694">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="453" y="76" key="#Project_Structure/0.0.1920.1050@0.0.1920.1050" timestamp="1589613700694" />
+    <state x="1183" y="394" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589616042465">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="1183" y="394" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1589616042465" />
+    <state x="1376" y="320" key="#com.intellij.ide.util.MemberChooser" timestamp="1589608030765">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="1376" y="320" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1589608030765" />
+    <state x="753" y="242" key="FileChooserDialogImpl" timestamp="1589616142747">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="753" y="242" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1589616142747" />
+    <state width="479" height="198" key="GridCell.Tab.0.bottom" timestamp="1589613625926">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="479" height="198" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1589613625926" />
+    <state width="479" height="198" key="GridCell.Tab.0.center" timestamp="1589613625926">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="479" height="198" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1589613625926" />
+    <state width="479" height="198" key="GridCell.Tab.0.left" timestamp="1589613625926">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="479" height="198" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1589613625926" />
+    <state width="479" height="198" key="GridCell.Tab.0.right" timestamp="1589613625926">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="479" height="198" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1589613625926" />
+    <state x="581" y="54" key="SettingsEditor" timestamp="1589616171499">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="581" y="54" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1589616171499" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1589609401077">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1589609401077" />
+    <state x="740" y="247" key="Vcs.Push.Dialog.v2" timestamp="1589613742196">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="740" y="247" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1589613742196" />
+    <state x="1200" y="363" key="git4idea.merge.GitPullDialog" timestamp="1589615413970">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="1200" y="363" key="git4idea.merge.GitPullDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1589615413970" />
+    <state x="1351" y="360" key="refactoring.ChangeSignatureDialog" timestamp="1589609713045">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="1351" y="360" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1589609713044" />
+  </component>
+</project>
