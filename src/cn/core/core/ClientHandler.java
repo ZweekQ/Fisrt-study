@@ -1,9 +1,6 @@
-package cn.core;
+package cn.core.core;
 
-import java.io.BufferedInputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.PrintStream;
+import java.io.*;
 import java.net.Socket;
 import java.util.PrimitiveIterator;
 
@@ -24,6 +21,18 @@ public class ClientHandler implements Runnable{
     public void run() {
         //获取数据响应
         try {
+
+            //1.1动态跳转网页文件
+            //1.1.1获取请求行
+            BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+            String line = reader.readLine();
+            System.out.println(line);
+
+            //1.1.2解析请求行的第二块数据
+            String[] datas = line.split(" ");
+            String url = datas[1];
+            System.out.println(url);
+
             PrintStream ps = new PrintStream(socket.getOutputStream());
 
             //拼接正确格式的响应代码
@@ -37,7 +46,7 @@ public class ClientHandler implements Runnable{
 //            String data = "Hello Web";
 //            ps.println("Content-Length" + data.length());
             //响应网页文件
-            File file = new File("web/hello.html");
+            File file = new File("web" + url);
             ps.println("Content-Lenght:" + file.length());
             //3.空白行
             ps.println();
