@@ -1,4 +1,4 @@
-package cn.core.core;
+package cn.core;
 
 import java.net.ServerSocket;
 import java.net.Socket;
