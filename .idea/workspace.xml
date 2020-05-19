@@ -37,8 +37,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -65,7 +65,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dom4j-1.6.1.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -73,6 +73,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\newile\web" />
       <recent name="C:\NewFile\web" />
       <recent name="C:\Users\Administrator.URUW44P6VPFSYTC\IdeaProjects\webday01\web" />
     </key>
@@ -122,6 +123,7 @@
       <updated>1589597741566</updated>
       <workItem from="1589597744200" duration="13696000" />
       <workItem from="1589773463514" duration="15314000" />
+      <workItem from="1589870387426" duration="6233000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1589598457385</created>
@@ -187,29 +189,35 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1376" y="320" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1589781833766" />
-    <state x="753" y="242" key="FileChooserDialogImpl" timestamp="1589616142747">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="753" y="240" key="FileChooserDialogImpl" timestamp="1589870502342">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="753" y="240" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589870502342" />
     <state x="753" y="242" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1589616142747" />
-    <state width="1040" height="276" key="GridCell.Tab.0.bottom" timestamp="1589789352604">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state width="1339" height="259" key="GridCell.Tab.0.bottom" timestamp="1589875829476">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1339" height="259" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589875829476" />
     <state width="1040" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1589789352604" />
-    <state width="1040" height="276" key="GridCell.Tab.0.center" timestamp="1589789352604">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state width="1339" height="259" key="GridCell.Tab.0.center" timestamp="1589875829476">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1339" height="259" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589875829476" />
     <state width="1040" height="276" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1589789352604" />
-    <state width="1040" height="276" key="GridCell.Tab.0.left" timestamp="1589789352604">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state width="1339" height="259" key="GridCell.Tab.0.left" timestamp="1589875829470">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1339" height="259" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589875829470" />
     <state width="1040" height="276" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1589789352604" />
-    <state width="1040" height="276" key="GridCell.Tab.0.right" timestamp="1589789352604">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state width="1339" height="259" key="GridCell.Tab.0.right" timestamp="1589875829476">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1339" height="259" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589875829476" />
     <state width="1040" height="276" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1589789352604" />
-    <state x="581" y="54" key="SettingsEditor" timestamp="1589705931999">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="581" y="53" key="SettingsEditor" timestamp="1589870521086">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="581" y="53" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1589870521086" />
     <state x="581" y="54" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1589705931999" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1589609401077">
       <screen x="0" y="0" width="1920" height="1050" />
@@ -223,9 +231,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1200" y="363" key="git4idea.merge.GitPullDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1589615413970" />
-    <state x="1351" y="360" key="refactoring.ChangeSignatureDialog" timestamp="1589609713045">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="1322" y="357" key="refactoring.ChangeSignatureDialog" timestamp="1589871819089">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="1322" y="357" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589871819089" />
     <state x="1351" y="360" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1589609713044" />
   </component>
 </project>
