@@ -28,12 +28,13 @@ public class HTTPResponse {
 
     //修改构造方法
     public HTTPResponse(OutputStream outputStream){
+        //this表示当前实例
         this.outputStream = outputStream;
     }
 
     //对外提供访问和修改私有属性的方法
     //包装此方法只执行一次
-    private boolean isSend; //默认是flase
+    private boolean isSend = false; //默认是flase
     public OutputStream getOutputStream() {
         if (!isSend) {
             //提取拼接响应头的代码

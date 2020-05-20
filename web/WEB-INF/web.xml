@@ -3,11 +3,9 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
-<<<<<<< HEAD
-=======
     <context-param>
         <param-name>javax.faces.CONFIG_FILES</param-name>
-        <param-value>/c3p0-config.xml</param-value>
+        <param-value>/WEB-INF/web1.xml</param-value>
     </context-param>
     <servlet>
         <servlet-name>Faces Servlet</servlet-name>
@@ -18,5 +16,4 @@
         <servlet-name>Faces Servlet</servlet-name>
         <url-pattern>*.xhtml</url-pattern>
     </servlet-mapping>
->>>>>>> 234a4c84f01560236eb6cd7f785a3277ef472e4e
 </web-app>

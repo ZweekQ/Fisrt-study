@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<server>
+    <service>
+        <connctor port = "8080" maxSize = "100" procotol = "HTTP\1.1">
+
+        </connctor>
+        <webRoot>web</webRoot>
+        <not-found-page>404.html</not-found-page>
+    </service>
+    <typemappings>
+        <typemapping ext = "png" type = "image/png">
+        </typemapping>
+
+        <typemapping ext = "jpg" type = "image/jpg">
+        </typemapping>
+
+        <typemapping ext = "html" type = "text/html">
+        </typemapping>
+
+    </typemappings>
+</server>

@@ -20,14 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="372dba81-86ef-4c04-a618-18fb5efd9b75" name="Default Changelist" comment="第一次提交">
-      <change afterPath="$PROJECT_DIR$/src/cn/http/HTTPRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/http/HTTPResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/webService/webContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/404.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webday01/cn/core/core/ClientHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webday01/cn/core/core/WebServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/core/core/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/core/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/core/core/WebServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/core/WebServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/core/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/core/ClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/http/HTTPResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/http/HTTPResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webday01.iml" beforeDir="false" afterPath="$PROJECT_DIR$/webday01.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +38,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Tag Library Descriptor" />
         <option value="HTML File" />
       </list>
     </option>
@@ -124,6 +125,7 @@
       <workItem from="1589597744200" duration="13696000" />
       <workItem from="1589773463514" duration="15314000" />
       <workItem from="1589870387426" duration="6233000" />
+      <workItem from="1589948626106" duration="10672000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1589598457385</created>
@@ -181,48 +183,48 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="423" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1589779318604" />
-    <state x="1183" y="394" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589773483317">
+    <state x="1183" y="394" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589951757013">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="1183" y="394" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1589773483317" />
+    <state x="1183" y="394" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1589951757013" />
     <state x="1376" y="320" key="#com.intellij.ide.util.MemberChooser" timestamp="1589781833766">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1376" y="320" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1589781833766" />
-    <state x="753" y="240" key="FileChooserDialogImpl" timestamp="1589870502342">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="753" y="240" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589870502342" />
-    <state x="753" y="242" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1589616142747" />
-    <state width="1339" height="259" key="GridCell.Tab.0.bottom" timestamp="1589875829476">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1339" height="259" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589875829476" />
-    <state width="1040" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1589789352604" />
-    <state width="1339" height="259" key="GridCell.Tab.0.center" timestamp="1589875829476">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1339" height="259" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589875829476" />
-    <state width="1040" height="276" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1589789352604" />
-    <state width="1339" height="259" key="GridCell.Tab.0.left" timestamp="1589875829470">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1339" height="259" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589875829470" />
-    <state width="1040" height="276" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1589789352604" />
-    <state width="1339" height="259" key="GridCell.Tab.0.right" timestamp="1589875829476">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1339" height="259" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589875829476" />
-    <state width="1040" height="276" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1589789352604" />
-    <state x="581" y="53" key="SettingsEditor" timestamp="1589870521086">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="581" y="53" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1589870521086" />
-    <state x="581" y="54" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1589705931999" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1589609401077">
+    <state x="753" y="242" key="FileChooserDialogImpl" timestamp="1589952792711">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1589609401077" />
+    <state x="753" y="240" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589870502342" />
+    <state x="753" y="242" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1589952792711" />
+    <state width="1108" height="239" key="GridCell.Tab.0.bottom" timestamp="1589956310060">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1339" height="259" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589875829476" />
+    <state width="1108" height="239" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1589956310060" />
+    <state width="1108" height="239" key="GridCell.Tab.0.center" timestamp="1589956310060">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1339" height="259" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589875829476" />
+    <state width="1108" height="239" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1589956310060" />
+    <state width="1108" height="239" key="GridCell.Tab.0.left" timestamp="1589956310060">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1339" height="259" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589875829470" />
+    <state width="1108" height="239" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1589956310060" />
+    <state width="1108" height="239" key="GridCell.Tab.0.right" timestamp="1589956310060">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1339" height="259" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589875829476" />
+    <state width="1108" height="239" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1589956310060" />
+    <state x="581" y="54" key="SettingsEditor" timestamp="1589952794243">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="581" y="53" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1589870521086" />
+    <state x="581" y="54" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1589952794243" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1589953057810">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1589953057810" />
     <state x="740" y="247" key="Vcs.Push.Dialog.v2" timestamp="1589613742196">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

@@ -26,7 +26,7 @@ public class ClientHandler implements Runnable{
         //获取数据响应
         try {
 
-            //获取服务端发来的数据,并处理请求.getInputStream方法可以得到一个输入流，客户端的Socket对象上的getInputStream方法得到输入流其实就是从服务器端发回的数据
+            //获取服务端发来的数据,并处理请求.getInputStream方法可以得到一个输入流，客户端的Socket对象上的getInputStream方法得到的输入流其实就是从服务器端发回的客户端请求数据
             HTTPRequest request = new HTTPRequest(socket.getInputStream());
 
             //利用httpResponse对浏览器做出数据响应,getOutputStream方法得到的是一个输出流，客户端的Socket对象上的getOutputStream方法得到的输出流其实就是发送给服务器端的数据
@@ -37,8 +37,8 @@ public class ClientHandler implements Runnable{
 
             //判断访问的文件是否存在
             if (file.exists()) {
-                response.setStatus(200);
             }else{
+                response.setStatus(200);
                 //文件不存在响应404文件
                 file = new File(webContext.webRoot + "/" + webContext.notFoundPage);
                 response.setStatus(404);
@@ -50,8 +50,9 @@ public class ClientHandler implements Runnable{
             response.setContentType(textType(request.getUrl()));
             response.setContentLength((int)file.length());
 
-            responseFile(response,file);
             //调用响应实体方法
+            responseFile(response,file);
+
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -82,10 +83,15 @@ public class ClientHandler implements Runnable{
             //刷新IO缓冲区的内容
             response.getOutputStream().flush();
 
-            //关闭
-            socket.close();
         } catch (Exception e) {
             e.printStackTrace();
+        }finally {
+            //关闭
+            try {
+                socket.close();
+            }catch (Exception e){
+                e.printStackTrace();
+            }
         }
     }
 }
