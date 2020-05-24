@@ -3,7 +3,6 @@ package cn.webService;
 import org.dom4j.Document;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
-
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -21,6 +20,7 @@ public class webContext {
     public static String webRoot;
     //创建保存响应文件类型的map
     public static Map<String,String> map = new HashMap<>();
+    public static Map<Integer,String> statusMap = new HashMap<>();
     //初始化成员变量
     static{
         init();
@@ -30,7 +30,7 @@ public class webContext {
         try {
             SAXReader reader = new SAXReader();
             //读取配置文件
-            Document doc = reader.read("C:\\newfile\\web\\WEB-INF\\web1.xml");
+            Document doc = reader.read("web\\WEB-INF\\web1.xml");
             //获取根元素
             Element server = doc.getRootElement();
             //获取service元素
@@ -52,7 +52,11 @@ public class webContext {
             port = Integer.parseInt(connctor.attributeValue("port"));
             procotol = connctor.attributeValue("procotol");
             maxSize = Integer.parseInt(connctor.attributeValue("maxSize"));
-            notFoundPage = service.attributeValue("not-found-page");
+            notFoundPage = service.elementText("not-found-page");
+            //状态码对应的状态短语
+            statusMap.put(200,"OK");
+            statusMap.put(404,"not Found");
+            statusMap.put(500,"Internal Server Error");
 
         }catch (Exception e){
             e.printStackTrace();

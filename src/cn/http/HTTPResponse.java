@@ -39,9 +39,8 @@ public class HTTPResponse {
         if (!isSend) {
             //提取拼接响应头的代码
             PrintStream ps = new PrintStream(outputStream);
-
             //状态行
-            ps.println(protocol + " " + status + " " + "OK");
+            ps.println(protocol + " " + status + " " + cn.webService.webContext.statusMap.get(status));
 
             //响应头:响应的数据格式
             ps.println("Content-type:" + contentType);

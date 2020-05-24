@@ -3,6 +3,8 @@ package cn.http;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * 这个类用来封装请求信息
@@ -21,7 +23,8 @@ public class HTTPRequest {
     //遵循的请求协议和
     private String protocol;
 
-
+    //创建保存用户名和密码的map
+    private Map<String,String> userMap = new HashMap<>();
     //创建构造函数，传入一个输入流对象
     public HTTPRequest(InputStream in){
         try {
@@ -37,12 +40,30 @@ public class HTTPRequest {
                     url = "/index.html";
                 }
                  protocol = datas[2];
+
+                //contatins判断字符串是否包含这个子串
+                 if (url.contains("?")){
+                     String str1 = url.substring(url.indexOf("?") + 1);
+                     String[] str2  = str1.split("&");
+                     for (String s:str2) {
+                         String key = s.split("=")[0];
+                         String value = s.split("=")[1];
+                         userMap.put(key,value);
+                     }
+                 }
             }
         }catch (Exception e){
             e.printStackTrace();
         }
     }
     //对外提供参数的修改以及访问方式
+    public Map<String, String> getuserMap(){
+        return userMap;
+    }
+
+    public String getuserMap(String name){
+        return userMap.get(name);
+    }
 
     public String getMethod() {
         return method;

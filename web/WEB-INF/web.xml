@@ -5,7 +5,7 @@
          version="4.0">
     <context-param>
         <param-name>javax.faces.CONFIG_FILES</param-name>
-        <param-value>/WEB-INF/web1.xml</param-value>
+        <param-value>/WEB-INF/web1.xml,/WEB-INF/c3p0-config.xml,/c3p0-config.xml</param-value>
     </context-param>
     <servlet>
         <servlet-name>Faces Servlet</servlet-name>
