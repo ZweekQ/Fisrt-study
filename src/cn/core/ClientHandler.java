@@ -7,6 +7,7 @@ import java.io.*;
 import java.net.Socket;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.util.Set;
 
 import cn.webService.webContext;
@@ -68,7 +69,6 @@ public class ClientHandler implements Runnable{
 
                 //调用响应实体方法
                 responseFile(response, file);
-                Set keys = request.getuserMap().keySet();
             }
         }catch (Exception e){
             e.printStackTrace();
@@ -103,10 +103,10 @@ public class ClientHandler implements Runnable{
             File file = new File(webContext.webRoot + "/register_success.html");
             //设置状态码
             response.setStatus(200);
-            //设置参数
+            //设置客户端和服务端的交互协议
             response.setProtocol(webContext.procotol);
             //动态获取响应内容的类型
-            response.setContentType(textType(request.getUrl()));
+            response.setContentType(file.getPath());
             //获取响应文件长度
             response.setContentLength((int) file.length());
             //响应实体
@@ -117,23 +117,71 @@ public class ClientHandler implements Runnable{
         }finally {
             //如果是从连接池获取的连接对象，调用conn.close()只是还回到连接池中，并不关闭
             JDBCUtils.close(conn,ps,null);
-            try{
-                //释放资源
-                socket.close();
-            }catch (Exception e){
-                e.printStackTrace();
-            }
         }
     }
 
     //实现登录操作
     private void loginUser(HTTPRequest request, HTTPResponse response) {
+        //1.获取登录信息
+        String name = request.getuserMap("username");
+        String password = request.getuserMap("password");
+        ResultSet rs = null;
+        Connection conn = null;
+        PreparedStatement ps = null;
+        //2.将获取的信息与数据库中的用户名和密码进行匹配
+        try {
+            // 从连接池获取数据库连接对象
+            conn = JDBCUtils.getConn();
+            //创建sql骨架，并获得带预编译效果的数据库传输对象
+            String sql = "select * from user where name = ? and password = ?";
+            ps = conn.prepareStatement(sql);
+            //给sql骨架赋值
+            ps.setString(1,name);
+            ps.setString(2,password);
+            //执行sql
+            rs = ps.executeQuery();
+            //3.匹配成功,登录成功并作出相应的响应
+            if (rs.next()){
+                //登录成功直接进去主页
+                File file = new File(webContext.webRoot + "/" + "index.html");
+                //设置状态码
+                response.setStatus(200);
+                //设置响应文件的长度
+                response.setContentLength((int)file.length());
+                //设置响应的文件类型
+                response.setContentType(textType(request.getUrl()));
+                //设置服务端客户端通信协议
+                response.setProtocol(webContext.procotol);
+                //响应实体
+                responseFile(response,file);
+            }else{
+                //4.匹配失败,登录失败并作出相应的响应
+                //登录失败进入登录失败的提示页面
+                File file = new File(webContext.webRoot + "/" + "login_failed.html");
+                //设置响应状态码
+                response.setStatus(200);
+                //设置响应文件的长度
+                response.setContentLength((int)file.length());
+                //设置响应文件的类型
+                response.setContentType(file.getPath());
+                //设置服务器客服端的通信协议
+                response.setProtocol(webContext.procotol);
+                //响应实体
+                responseFile(response,file);
+            }
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            JDBCUtils.close(conn,ps,rs);
+        }
 
     }
 
     private String textType(String url) {
         //截取url的后缀名
         String lastStirng = url.substring(url.lastIndexOf(".") + 1);
+        System.out.println(webContext.map.get(lastStirng));
         return webContext.map.get(lastStirng);
     }
 

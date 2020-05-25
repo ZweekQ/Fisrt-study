@@ -24,7 +24,8 @@ public class HTTPRequest {
     private String protocol;
 
     //创建保存用户名和密码的map
-    private Map<String,String> userMap = new HashMap<>();
+    private final Map<String,String> userMap = new HashMap<>();
+
     //创建构造函数，传入一个输入流对象
     public HTTPRequest(InputStream in){
         try {
