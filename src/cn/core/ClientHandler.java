@@ -149,7 +149,7 @@ public class ClientHandler implements Runnable{
                 //设置响应文件的长度
                 response.setContentLength((int)file.length());
                 //设置响应的文件类型
-                response.setContentType(textType(request.getUrl()));
+                response.setContentType(file.getPath());
                 //设置服务端客户端通信协议
                 response.setProtocol(webContext.procotol);
                 //响应实体
@@ -181,7 +181,6 @@ public class ClientHandler implements Runnable{
     private String textType(String url) {
         //截取url的后缀名
         String lastStirng = url.substring(url.lastIndexOf(".") + 1);
-        System.out.println(webContext.map.get(lastStirng));
         return webContext.map.get(lastStirng);
     }
 
